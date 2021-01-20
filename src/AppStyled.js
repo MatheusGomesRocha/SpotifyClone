@@ -95,3 +95,17 @@ export const ContentTopLink = styled.a`
         color: #fff;
     }
 `;
+
+
+export const ContentBottom = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+`;
+export const ContentBottomText = styled.span`
+    font-size: ${props=>props.font || '16px'};
+    margin-top: ${props=>props.mTop};
+    font-weight: ${props=>props.bolder || 'normal'};
+    font-family:  'Noto Sans JP', sans-serif;
+`;

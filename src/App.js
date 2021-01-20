@@ -17,6 +17,9 @@ import {
     ContentTop,
     ContentTopText,
     ContentTopLink,
+
+    ContentBottom,
+    ContentBottomText,
 } from './AppStyled'
 
 import {Button} from '@material-ui/core';
@@ -24,6 +27,7 @@ import {Button} from '@material-ui/core';
 import {
     withStyles,
 } from '@material-ui/core/styles';
+
 
 
 export default () => {
@@ -42,6 +46,24 @@ export default () => {
 
             '&:hover': {
                 backgroundColor: '#38D45F',
+            }
+        },
+    }))(Button);
+
+    const ContentBottomBtn = withStyles(() => ({
+        root: {
+            color: '#666',
+            height: 50,
+            width: 280,
+            borderRadius: 30,
+            marginTop: 30,
+            fontWeight: 'bold',
+            textDecoration: 'none',
+            border: '2px solid #666',
+
+            '&:hover': {
+                backgroundColor: '#666',
+                color: '#fff',
             }
         },
     }))(Button);
@@ -75,6 +97,16 @@ export default () => {
 
                 <ContentTopLink href={"#"}>* Sujeito a termos e condições</ContentTopLink>
             </ContentTop>
+
+            <ContentBottom>
+                <ContentBottomText font={"40px"} bolder={"800"}>É música que você quer?</ContentBottomText>
+
+                <ContentBottomText font={"18px"} mTop={"15px"}>
+                    Continue curtindo suas favoritas de onde parou.
+                </ContentBottomText>
+
+                <ContentBottomBtn href={"#"}>ABRIR O WEB PLAYER</ContentBottomBtn>
+            </ContentBottom>
         </Container>
     );
 }
