@@ -12,7 +12,6 @@ import {
     LineDiv,
     UserLink,
     UserImg,
-    UserText,
     DropdownImg,
 
     ContentTop,
@@ -28,17 +27,17 @@ import {
 
 
 export default () => {
-    const DefaultBtn = withStyles(() => ({
+    const ContentTopBtn = withStyles(() => ({
         root: {
             backgroundColor: '#5DA443',
             color: '#fff',
-            height: 40,
-            width: 400,
-            borderRadius: 20,
-            marginTop: 45,
-            textAlign: 'center',
+            height: 55,
+            width: 360,
+            borderRadius: 30,
+            marginTop: 60,
             fontWeight: 'bold',
             textDecoration: 'none',
+            fontSize: 17,
 
 
             '&:hover': {
@@ -71,9 +70,10 @@ export default () => {
             <ContentTop>
                 <ContentTopText>Vá de Premium. E seja feliz!</ContentTopText>
 
-                <DefaultBtn href={"#"}>OBTER SPOTIFY PREMIUM</DefaultBtn>
+                <ContentTopBtn href={"#"}>OBTER SPOTIFY PREMIUM</ContentTopBtn>
 
-                <ContentTopLink href={"#"}>*Pode obter regras de uso</ContentTopLink>
+
+                <ContentTopLink href={"#"}>* Sujeito a termos e condições</ContentTopLink>
             </ContentTop>
         </Container>
     );

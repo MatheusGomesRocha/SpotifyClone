@@ -4,8 +4,6 @@
     <list default="true" id="b2238959-45b1-41ee-9f2c-709ed1ee10e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
     </list>
@@ -52,7 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611078030940</updated>
       <workItem from="1611078049469" duration="5073000" />
-      <workItem from="1611094433649" duration="855000" />
+      <workItem from="1611094433649" duration="976000" />
+      <workItem from="1611144971731" duration="958000" />
     </task>
     <servers />
   </component>

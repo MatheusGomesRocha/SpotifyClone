@@ -26,8 +26,12 @@ export const HeaderRight = styled.div`
 export const HeaderLink = styled.a`
     color: #fff;
     font-weight: bold;
-    margin-right: 32px;
     text-decoration: none;
+    height: 80px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     :hover {
         color: #38D45F;
@@ -83,4 +87,11 @@ export const ContentTopText = styled.span`
 `;
 export const ContentTopLink = styled.a`
     color: #eee;
+    font-size: 12px;
+    position: relative;
+    top: 115px;
+    
+    :hover {
+        color: #fff;
+    }
 `;
