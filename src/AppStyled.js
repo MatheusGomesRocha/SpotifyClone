@@ -10,6 +10,7 @@ export const Header = styled.div`
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 999;
 `;
 export const HeaderLogo = styled.img`
     width: 135px;
@@ -104,8 +105,47 @@ export const ContentBottom = styled.div`
     padding-top: 70px;
 `;
 export const ContentBottomText = styled.span`
-    font-size: ${props=>props.font || '16px'};
-    margin-top: ${props=>props.mTop};
-    font-weight: ${props=>props.bolder || 'normal'};
+    font-size: ${props => props.font || '16px'};
+    margin-top: ${props => props.mTop};
+    font-weight: ${props => props.bolder || 'normal'};
     font-family:  'Noto Sans JP', sans-serif;
+`;
+export const ContentBottomLogos = styled.div`
+    margin: 70px 0;
+`;
+export const ContentBottomImgRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+`;
+export const ContentBottomImg = styled.div`
+    background-image: url(${props=>props.bg});
+    width: 310px;
+    height: 310px;
+    margin: 8px;
+    box-shadow: 0px -2px 6px 0px rgba(0,0,0,0.44);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+`;
+export const ContentBottomHiddenDiv = styled.div`
+    background-color: transparent;
+    z-index: 1;
+    width: 310px;
+    height: 310px;
+    
+    :hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        animation: fadein 0.5s;
+        z-index: 999;
+        cursor: pointer;
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
 `;

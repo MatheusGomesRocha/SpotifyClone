@@ -1,6 +1,11 @@
 import Logo from './img/logo_spotify.png';
 import User from './img/user_img.jpeg';
 import Dropdown from './img/dropdown.png';
+import Logo2 from './img/logo2.jpg';
+import Logo3 from './img/logo3.jpg';
+import Logo5 from './img/logo5.png';
+import Logo4 from './img/logo4.jpg';
+import Logo6 from './img/logo6.png';
 
 import {
     Container,
@@ -20,6 +25,10 @@ import {
 
     ContentBottom,
     ContentBottomText,
+    ContentBottomLogos,
+    ContentBottomImgRow,
+    ContentBottomImg,
+    ContentBottomHiddenDiv
 } from './AppStyled'
 
 import {Button} from '@material-ui/core';
@@ -27,7 +36,6 @@ import {Button} from '@material-ui/core';
 import {
     withStyles,
 } from '@material-ui/core/styles';
-
 
 
 export default () => {
@@ -106,6 +114,43 @@ export default () => {
                 </ContentBottomText>
 
                 <ContentBottomBtn href={"#"}>ABRIR O WEB PLAYER</ContentBottomBtn>
+
+                <ContentBottomLogos>
+
+                    <ContentBottomImgRow>
+
+                        <ContentBottomImg bg={Logo2}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo2}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo3}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                    </ContentBottomImgRow>
+
+                    <ContentBottomImgRow>
+
+                        <ContentBottomImg bg={Logo4}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo5}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo6}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                    </ContentBottomImgRow>
+
+
+                </ContentBottomLogos>
             </ContentBottom>
         </Container>
     );
