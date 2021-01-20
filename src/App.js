@@ -106,7 +106,53 @@ export default () => {
                 <ContentTopLink href={"#"}>* Sujeito a termos e condições</ContentTopLink>
             </ContentTop>
 
+
             <ContentBottom>
+                <ContentBottomText font={"40px"} bolder={"800"}>É música que você quer?</ContentBottomText>
+
+                <ContentBottomText font={"18px"} mTop={"15px"}>
+                    Continue curtindo suas favoritas de onde parou.
+                </ContentBottomText>
+
+                <ContentBottomBtn href={"#"}>ABRIR O WEB PLAYER</ContentBottomBtn>
+
+                <ContentBottomLogos>
+
+                    <ContentBottomImgRow>
+
+                        <ContentBottomImg bg={Logo2}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo2}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo3}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                    </ContentBottomImgRow>
+
+                    <ContentBottomImgRow>
+
+                        <ContentBottomImg bg={Logo4}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo5}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                        <ContentBottomImg bg={Logo6}>
+                            <ContentBottomHiddenDiv></ContentBottomHiddenDiv>
+                        </ContentBottomImg>
+
+                    </ContentBottomImgRow>
+
+
+                </ContentBottomLogos>
+            </ContentBottom><ContentBottom>
                 <ContentBottomText font={"40px"} bolder={"800"}>É música que você quer?</ContentBottomText>
 
                 <ContentBottomText font={"18px"} mTop={"15px"}>

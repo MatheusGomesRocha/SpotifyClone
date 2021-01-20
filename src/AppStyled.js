@@ -11,11 +11,15 @@ export const Header = styled.div`
     justify-content: space-between;
     position: fixed;
     z-index: 999;
+    
+    @media(min-width: 1200px) {
+       justify-content: space-around;
+    }
 `;
 export const HeaderLogo = styled.img`
     width: 135px;
     height: 135px;
-    margin: 0 0 20px 40px;
+    margin: 0 0 20px 28px;
 `;
 export const HeaderRight = styled.div`
     display: flex;
@@ -45,7 +49,6 @@ export const LineDiv = styled.div`
     margin-right: 35px;
 `;
 export const UserLink = styled.a`
-    margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,13 +118,10 @@ export const ContentBottomLogos = styled.div`
 `;
 export const ContentBottomImgRow = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
 `;
 export const ContentBottomImg = styled.div`
-    background-image: url(${props=>props.bg});
-    width: 310px;
+    background-image: url(${props => props.bg});
+    max-width: 350px;
     height: 310px;
     margin: 8px;
     box-shadow: 0px -2px 6px 0px rgba(0,0,0,0.44);
@@ -129,23 +129,29 @@ export const ContentBottomImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     
-    
+    @media(min-width: 1200px) {
+        width: 360px;
+        height: 360px;
+    }
 `;
 export const ContentBottomHiddenDiv = styled.div`
     background-color: transparent;
-    z-index: 1;
     width: 310px;
     height: 310px;
-    
+
     :hover {
         background-color: rgba(0, 0, 0, 0.6);
         animation: fadein 0.5s;
-        z-index: 999;
         cursor: pointer;
     }
     
     @keyframes fadein {
         from { opacity: 0; }
         to   { opacity: 1; }
+    }
+    
+    @media(min-width: 1200px) {
+        width: 360px;
+        height: 360px;
     }
 `;
